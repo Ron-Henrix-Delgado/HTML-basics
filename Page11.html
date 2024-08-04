@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    
+    <h1>Page 11 About forms</h1>
+    
+    <hr>
+
+    <!--on the attribute "method" you can also use GET instead of POST,
+        php is an example you can use on this action-->
+    <form action="action_page.php" method="POST">
+        
+        <div>
+        <label for="fname">First Name: </label>
+        <!--Putting a bollean attribute "required" requires the function
+            to fill the blank space first before you can submit your work-->
+        <input type="text" id="fname" name="fname" placeholder="Ron" required>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lname" placeholder="Delgado" required>
+        </div>
+
+        <br>
+
+        <div>
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="pass" placeholder="Password" maxlength="20"  required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+        <label for="email">Email: </label>
+         <input type="email" id="email" name="email" placeholder="asdfg12345@gmail.com" required>
+    
+        </div>
+    
+         <br>
+
+
+
+         <div>
+
+        <label for="phone">Telephone Number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="123 456 7890" required>
+        
+        </div>
+        
+        <br>
+
+
+        <div>
+
+        <label for="bdate">Birthdate: </label>
+        <input type="date" id="bdate" name="bdate" placeholder="06/04/2000" required>
+        
+        </div>
+        
+        <br>
+
+
+        <div>
+
+        <label for="quantity">Quantity: </label>
+        <input type="number" id="quantity" name="quantity" min="0" max="99" value="0" required>
+        
+        </div>
+        
+        <br>
+
+        <div>
+
+        <label for="checkbox">Checkbox: </label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+                
+        </div>
+        
+        <br>
+
+        <div>
+
+        <label for="title">Title: </label>
+
+
+        <!--putting the attribute "name=" " can make the function click 1 type-->
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title" value="Mr.">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+        <label for="PhD.">Phd.</label>
+        <input type="radio" id="PhD." name="title" value="PhD.">
+        
+        </div>
+        
+        <br>
+
+        <div>
+
+        <label for="payment">Payment: </label>
+        <select id="payment" name="payment">
+            <option>VISA</option>
+            <option>Mastercard</option>
+            <option>Giftcard</option>
+
+        </div>
+            
+        <br>
+
+        <div>
+        <label for="checkbox">Checkbox: </label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+                    
+        </div>
+
+        <br>
+
+
+        <div>
+
+            <input type="reset">
+
+        </div>
+
+        <br>
+
+        <div>
+            <!-- if the data dont have a place to go to we use the "action"
+             attribute that goes to the "<from>" tag from the top-->
+            <input type="submit">
+
+        </div>
+
+        <body>
+
+            <a href="index.html" target="_self" title="First Page">
+                <img src="/Images/Double Arrow Left.png" height="50">
+            </a>
+        
+            <a href="Page10.html" target="_self" title="Previous Page">
+                <img src="/Images/Arrow 2 Left.jpg" height="50">
+            </a>
+
+        </body>
+    </form>
+
+</body>
+</html>
